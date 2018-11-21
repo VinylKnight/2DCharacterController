@@ -36,6 +36,7 @@ public class CharacterController : MonoBehaviour {
     private void UpdateHorizontalInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("Speed", Mathf.Abs(horizontalInput));
     }
     private void Move()
     {
